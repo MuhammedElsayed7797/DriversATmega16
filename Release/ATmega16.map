@@ -1,0 +1,619 @@
+Archive member included because of file (symbol)
+
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o (exit)
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./Timer1/Timer1.o (__do_clear_bss)
+
+Allocating common symbols
+Common symbol       size              file
+
+TWI_MR_DataSize     0x1               ./TWI/TWI.o
+TWI_NotificationFunction_Temp
+                    0x2               ./EEPROM_24C512/EEPROM_24C512.o
+EE24C512_NotificationAddress
+                    0x2               ./EEPROM_24C512/EEPROM_24C512.o
+TWI_MT_DataSize     0x1               ./TWI/TWI.o
+EE24C512_NotificationMask
+                    0x1               ./EEPROM_24C512/EEPROM_24C512.o
+Timer1_ClockSource  0x1               ./Timer1/Timer1.o
+Timer1_FunctPtr_Array
+                    0x8               ./Timer1/Timer1.o
+TWI_ModeBusy        0x1               ./TWI/TWI.o
+EE24C512_NotificationValue
+                    0x1               ./EEPROM_24C512/EEPROM_24C512.o
+TWI_ST_DataSize     0x1               ./TWI/TWI.o
+TWI_SR_DataSize     0x1               ./TWI/TWI.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+LOAD ./Timer1/Timer1.o
+LOAD ./TWI/TWI.o
+LOAD ./MCU/Mcu.o
+LOAD ./EEPROM_24C512/EEPROM_24C512.o
+LOAD ./EEPROM/Eep.o
+LOAD ./Dio/Dio.o
+LOAD ./Application/main.o
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000      0xcaa
+ *(.vectors)
+ .vectors       0x00000000       0x54 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x10 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000060                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000070        0x8 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ *(.init9)
+ *(.text)
+ .text          0x00000078        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+                0x00000078                __vector_1
+                0x00000078                __vector_12
+                0x00000078                __bad_interrupt
+                0x00000078                __vector_3
+                0x00000078                __vector_11
+                0x00000078                __vector_13
+                0x00000078                __vector_19
+                0x00000078                __vector_4
+                0x00000078                __vector_9
+                0x00000078                __vector_2
+                0x00000078                __vector_15
+                0x00000078                __vector_14
+                0x00000078                __vector_10
+                0x00000078                __vector_16
+                0x00000078                __vector_18
+                0x00000078                __vector_20
+ .text          0x0000007c        0x0 ./Timer1/Timer1.o
+ .text          0x0000007c        0x0 ./TWI/TWI.o
+ .text          0x0000007c        0x0 ./MCU/Mcu.o
+ .text          0x0000007c        0x0 ./EEPROM_24C512/EEPROM_24C512.o
+ .text          0x0000007c        0x0 ./EEPROM/Eep.o
+ .text          0x0000007c        0x0 ./Dio/Dio.o
+ .text          0x0000007c        0x0 ./Application/main.o
+ .text          0x0000007c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x0000007c        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x0000007c                . = ALIGN (0x2)
+ *(.text.*)
+ .text.Timer1_SetClock
+                0x0000007c        0x6 ./Timer1/Timer1.o
+                0x0000007c                Timer1_SetClock
+ .text.Timer1_MatchSignal_A
+                0x00000082       0x16 ./Timer1/Timer1.o
+                0x00000082                Timer1_MatchSignal_A
+ .text.Timer1_MatchSignal_B
+                0x00000098       0x12 ./Timer1/Timer1.o
+                0x00000098                Timer1_MatchSignal_B
+ .text.Timer1_ForceMatch_A
+                0x000000aa        0x8 ./Timer1/Timer1.o
+                0x000000aa                Timer1_ForceMatch_A
+ .text.Timer1_ForceMatch_B
+                0x000000b2        0x8 ./Timer1/Timer1.o
+                0x000000b2                Timer1_ForceMatch_B
+ .text.Timer1_ICU_NoiseCanceler_Enable
+                0x000000ba       0x14 ./Timer1/Timer1.o
+                0x000000ba                Timer1_ICU_NoiseCanceler_Enable
+ .text.Timer1_ICU_Select_RisingEdge
+                0x000000ce       0x1a ./Timer1/Timer1.o
+                0x000000ce                Timer1_ICU_Select_RisingEdge
+ .text.Timer1_Set_Mode
+                0x000000e8       0x4a ./Timer1/Timer1.o
+                0x000000e8                Timer1_Set_Mode
+ .text.Timer1_SetTopValue
+                0x00000132       0x26 ./Timer1/Timer1.o
+                0x00000132                Timer1_SetTopValue
+ .text.Timer1_SetCompare_A_Value
+                0x00000158       0x16 ./Timer1/Timer1.o
+                0x00000158                Timer1_SetCompare_A_Value
+ .text.Timer1_SetCompare_B_Value
+                0x0000016e        0x6 ./Timer1/Timer1.o
+                0x0000016e                Timer1_SetCompare_B_Value
+ .text.Timer1_ReadCounterValue
+                0x00000174        0x8 ./Timer1/Timer1.o
+                0x00000174                Timer1_ReadCounterValue
+ .text.Timer1_SetCounterValue
+                0x0000017c        0x6 ./Timer1/Timer1.o
+                0x0000017c                Timer1_SetCounterValue
+ .text.Timer1_Interrupt_CallBack
+                0x00000182       0x12 ./Timer1/Timer1.o
+                0x00000182                Timer1_Interrupt_CallBack
+ .text.Timer1_Init
+                0x00000194       0x98 ./Timer1/Timer1.o
+                0x00000194                Timer1_Init
+ .text.Timer1_deInit
+                0x0000022c       0x2c ./Timer1/Timer1.o
+                0x0000022c                Timer1_deInit
+ .text.__vector_5
+                0x00000258       0x5a ./Timer1/Timer1.o
+                0x00000258                __vector_5
+ .text.__vector_6
+                0x000002b2       0x4e ./Timer1/Timer1.o
+                0x000002b2                __vector_6
+ .text.__vector_7
+                0x00000300       0x4e ./Timer1/Timer1.o
+                0x00000300                __vector_7
+ .text.__vector_8
+                0x0000034e       0x4e ./Timer1/Timer1.o
+                0x0000034e                __vector_8
+ .text.TWI_Init
+                0x0000039c       0x24 ./TWI/TWI.o
+                0x0000039c                TWI_Init
+ .text.TWI_DeInit
+                0x000003c0       0x10 ./TWI/TWI.o
+                0x000003c0                TWI_DeInit
+ .text.TWI_MT   0x000003d0       0x48 ./TWI/TWI.o
+                0x000003d0                TWI_MT
+ .text.TWI_MR   0x00000418       0x4a ./TWI/TWI.o
+                0x00000418                TWI_MR
+ .text.TWI_ST   0x00000462       0x30 ./TWI/TWI.o
+                0x00000462                TWI_ST
+ .text.TWI_SR   0x00000492       0x30 ./TWI/TWI.o
+                0x00000492                TWI_SR
+ .text.TWI_GeneralCall
+                0x000004c2        0xc ./TWI/TWI.o
+                0x000004c2                TWI_GeneralCall
+ .text.TWI_TransmissionSTOP
+                0x000004ce        0x8 ./TWI/TWI.o
+                0x000004ce                TWI_TransmissionSTOP
+ .text.TWI_UnSlave
+                0x000004d6        0x8 ./TWI/TWI.o
+                0x000004d6                TWI_UnSlave
+ .text.__vector_17
+                0x000004de      0x338 ./TWI/TWI.o
+                0x000004de                __vector_17
+ .text.Mcu_Sleep
+                0x00000816       0x16 ./MCU/Mcu.o
+                0x00000816                Mcu_Sleep
+ .text.Mcu_ResetReason
+                0x0000082c        0xa ./MCU/Mcu.o
+                0x0000082c                Mcu_ResetReason
+ .text.Mcu_DisableWatchdog
+                0x00000836       0x10 ./MCU/Mcu.o
+                0x00000836                Mcu_DisableWatchdog
+ .text.Mcu_WatchdogPrescaler
+                0x00000846        0xe ./MCU/Mcu.o
+                0x00000846                Mcu_WatchdogPrescaler
+ .text.Mcu_MoveVector_
+                0x00000854       0x12 ./MCU/Mcu.o
+                0x00000854                Mcu_MoveVector_
+ .text.EE24C512_Notification
+                0x00000866       0x28 ./EEPROM_24C512/EEPROM_24C512.o
+                0x00000866                EE24C512_Notification
+ .text.EE24C512_Write
+                0x0000088e       0x90 ./EEPROM_24C512/EEPROM_24C512.o
+                0x0000088e                EE24C512_Write
+ .text.EE24C512_ISR
+                0x0000091e       0xdc ./EEPROM_24C512/EEPROM_24C512.o
+                0x0000091e                EE24C512_ISR
+ .text.EE24C512_Read
+                0x000009fa       0x90 ./EEPROM_24C512/EEPROM_24C512.o
+                0x000009fa                EE24C512_Read
+ .text.Eep_Write
+                0x00000a8a       0x1a ./EEPROM/Eep.o
+                0x00000a8a                Eep_Write
+ .text.Eep_Read
+                0x00000aa4       0x1c ./EEPROM/Eep.o
+                0x00000aa4                Eep_Read
+ .text.Dio_Init
+                0x00000ac0       0x44 ./Dio/Dio.o
+                0x00000ac0                Dio_Init
+ .text.Dio_WritePin
+                0x00000b04       0x36 ./Dio/Dio.o
+                0x00000b04                Dio_WritePin
+ .text.Dio_ReadPin
+                0x00000b3a       0x26 ./Dio/Dio.o
+                0x00000b3a                Dio_ReadPin
+ .text.Dio_FlipPin
+                0x00000b60       0x28 ./Dio/Dio.o
+                0x00000b60                Dio_FlipPin
+ .text.Dio_WritePort
+                0x00000b88        0xc ./Dio/Dio.o
+                0x00000b88                Dio_WritePort
+ .text.Dio_ReadPort
+                0x00000b94        0xc ./Dio/Dio.o
+                0x00000b94                Dio_ReadPort
+ .text.Dio_FlipPort
+                0x00000ba0       0x10 ./Dio/Dio.o
+                0x00000ba0                Dio_FlipPort
+ .text.Dio_WriteGroup
+                0x00000bb0       0x18 ./Dio/Dio.o
+                0x00000bb0                Dio_WriteGroup
+ .text.Dio_ReadGroup
+                0x00000bc8        0xe ./Dio/Dio.o
+                0x00000bc8                Dio_ReadGroup
+ .text.Dio_FlipGroup
+                0x00000bd6       0x10 ./Dio/Dio.o
+                0x00000bd6                Dio_FlipGroup
+ .text.Dio_SetPinDirection
+                0x00000be6       0x36 ./Dio/Dio.o
+                0x00000be6                Dio_SetPinDirection
+ .text.Dio_SetPortDirection
+                0x00000c1c        0xc ./Dio/Dio.o
+                0x00000c1c                Dio_SetPortDirection
+ .text.Dio_SetGroupDirection
+                0x00000c28       0x18 ./Dio/Dio.o
+                0x00000c28                Dio_SetGroupDirection
+ .text.Dio_SetInterruptMode
+                0x00000c40       0x42 ./Dio/Dio.o
+                0x00000c40                Dio_SetInterruptMode
+ .text.ToggleLed
+                0x00000c82        0x8 ./Application/main.o
+                0x00000c82                ToggleLed
+ .text.main     0x00000c8a       0x1c ./Application/main.o
+                0x00000c8a                main
+ .text.libgcc   0x00000ca6        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00000ca6        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000ca6                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00000ca6        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00000ca6                exit
+                0x00000ca6                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00000ca6        0x4 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00000caa                _etext = .
+
+.data           0x00800060        0x0 load address 0x00000caa
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ .data          0x00800060        0x0 ./Timer1/Timer1.o
+ .data          0x00800060        0x0 ./TWI/TWI.o
+ .data          0x00800060        0x0 ./MCU/Mcu.o
+ .data          0x00800060        0x0 ./EEPROM_24C512/EEPROM_24C512.o
+ .data          0x00800060        0x0 ./EEPROM/Eep.o
+ .data          0x00800060        0x0 ./Dio/Dio.o
+ .data          0x00800060        0x0 ./Application/main.o
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.data*)
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x00800060                . = ALIGN (0x2)
+                0x00800060                _edata = .
+                0x00800060                PROVIDE (__data_end, .)
+
+.bss            0x00800060       0x31
+                0x00800060                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm16.o
+ .bss           0x00800060        0x0 ./Timer1/Timer1.o
+ .bss           0x00800060        0x0 ./TWI/TWI.o
+ .bss           0x00800060        0x0 ./MCU/Mcu.o
+ .bss           0x00800060        0x0 ./EEPROM_24C512/EEPROM_24C512.o
+ .bss           0x00800060        0x0 ./EEPROM/Eep.o
+ .bss           0x00800060        0x0 ./Dio/Dio.o
+ .bss           0x00800060        0x0 ./Application/main.o
+ .bss           0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x00800060        0x0 c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ *(.bss*)
+ .bss.Timer1_Variable_Top_Flag
+                0x00800060        0x1 ./Timer1/Timer1.o
+                0x00800060                Timer1_Variable_Top_Flag
+ .bss.Timer1_ORC1A_Top_Flag
+                0x00800061        0x1 ./Timer1/Timer1.o
+                0x00800061                Timer1_ORC1A_Top_Flag
+ .bss.Timer1_ICU_Value
+                0x00800062        0x2 ./Timer1/Timer1.o
+                0x00800062                Timer1_ICU_Value
+ .bss.TWI_Test  0x00800064        0x1 ./TWI/TWI.o
+                0x00800064                TWI_Test
+ .bss.TWI_Internal_SLA_R_W
+                0x00800065        0x1 ./TWI/TWI.o
+                0x00800065                TWI_Internal_SLA_R_W
+ .bss.TWI_Internal_DataIndex
+                0x00800066        0x1 ./TWI/TWI.o
+                0x00800066                TWI_Internal_DataIndex
+ .bss.TWI_InternalMT_DataAddress
+                0x00800067        0x2 ./TWI/TWI.o
+                0x00800067                TWI_InternalMT_DataAddress
+ .bss.TWI_InternalMR_DataAddress
+                0x00800069        0x2 ./TWI/TWI.o
+                0x00800069                TWI_InternalMR_DataAddress
+ .bss.TWI_InternalST_DataAddress
+                0x0080006b        0x2 ./TWI/TWI.o
+                0x0080006b                TWI_InternalST_DataAddress
+ .bss.TWI_InternalSR_DataAddress
+                0x0080006d        0x2 ./TWI/TWI.o
+                0x0080006d                TWI_InternalSR_DataAddress
+ .bss.TWI_SlaveFlag
+                0x0080006f        0x1 ./TWI/TWI.o
+                0x0080006f                TWI_SlaveFlag
+ .bss.TWI_CurrentState
+                0x00800070        0x1 ./TWI/TWI.o
+                0x00800070                TWI_CurrentState
+ .bss.TWI_NotificationFunction
+                0x00800071        0x2 ./TWI/TWI.o
+                0x00800071                TWI_NotificationFunction
+ .bss.EE24C512_BusyFlag
+                0x00800073        0x1 ./EEPROM_24C512/EEPROM_24C512.o
+                0x00800073                EE24C512_BusyFlag
+ .bss.EE24C512_ReadAddressFlag
+                0x00800074        0x1 ./EEPROM_24C512/EEPROM_24C512.o
+                0x00800074                EE24C512_ReadAddressFlag
+ .bss.EE24C512_NotificationFlag
+                0x00800075        0x1 ./EEPROM_24C512/EEPROM_24C512.o
+                0x00800075                EE24C512_NotificationFlag
+ .bss.ISR_ReadDataAdress
+                0x00800076        0x2 ./EEPROM_24C512/EEPROM_24C512.o
+                0x00800076                ISR_ReadDataAdress
+ .bss.ISR_ReadDataSize
+                0x00800078        0x1 ./EEPROM_24C512/EEPROM_24C512.o
+                0x00800078                ISR_ReadDataSize
+ .bss.ISR_WriteDataAdress
+                0x00800079        0x2 ./EEPROM_24C512/EEPROM_24C512.o
+                0x00800079                ISR_WriteDataAdress
+ .bss.ISR_WriteDataSize
+                0x0080007b        0x1 ./EEPROM_24C512/EEPROM_24C512.o
+                0x0080007b                ISR_WriteDataSize
+ .bss.EEPROM_Address
+                0x0080007c        0x1 ./EEPROM_24C512/EEPROM_24C512.o
+                0x0080007c                EEPROM_Address
+ *(COMMON)
+ COMMON         0x0080007d        0x9 ./Timer1/Timer1.o
+                0x0080007d                Timer1_ClockSource
+                0x0080007e                Timer1_FunctPtr_Array
+ COMMON         0x00800086        0x5 ./TWI/TWI.o
+                0x00800086                TWI_MR_DataSize
+                0x00800087                TWI_MT_DataSize
+                0x00800088                TWI_ModeBusy
+                0x00800089                TWI_ST_DataSize
+                0x0080008a                TWI_SR_DataSize
+ COMMON         0x0080008b        0x6 ./EEPROM_24C512/EEPROM_24C512.o
+                0x0080008b                TWI_NotificationFunction_Temp
+                0x0080008d                EE24C512_NotificationAddress
+                0x0080008f                EE24C512_NotificationMask
+                0x00800090                EE24C512_NotificationValue
+                0x00800091                PROVIDE (__bss_end, .)
+                0x00000caa                __data_load_start = LOADADDR (.data)
+                0x00000caa                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x00800091        0x0
+                0x00800091                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x00800091                PROVIDE (__noinit_end, .)
+                0x00800091                _end = .
+                0x00800091                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(ATmega16.elf elf32-avr)
+LOAD linker stubs
